@@ -5,78 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/icon1.png">
     <title>Перукарня "Марія"</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    <link rel="stylesheet" type="text/css" href="style/style.css">
 
-        header {
-            background-color: #d06793;
-            color: #fff;
-            padding: 1em;
-            text-align: center;
-        }
-
-        main {
-            padding: 20px;
-        }
-
-        footer {
-            background-color: #678cd0;
-            color: #fff;
-            padding: 1em;
-            text-align: center;
-            bottom: 0;
-            width: 100%;
-            height: 70px;
-        }
-
-        img {
-            border-radius: 25px;
-            max-width: 100%;
-            height: 200px;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-
-
-        form {
-            margin-top: 20px;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 8px;
-        }
-
-        input {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 15px;
-        }
-
-        a.perehid {
-            color: #d06793;
-        }
-
-        img.icons {
-            height: 30px;
-        }
-      
-    </style>
 </head>
 <body>
 
@@ -87,7 +17,9 @@
 
     <main>
         <p>Ласкаво просимо до перукарні "Марія", де ми пропонуємо сучасні стрижки та послуги за доступними цінами.</p>
-<H3>Галерея</H3>
+
+        <div class="galery">
+            <H3>Галерея</H3>
         <img src="img/Open.png" alt="Вхід">
         <img src="img/foto1.png" alt="Шампуні">
         <img src="img/str1.jpg " alt="Стрижки та зачіски">
@@ -95,7 +27,9 @@
         <img src="img/str3.jpg" alt="Стрижки та зачіски">
         <img src="img/str4.jpg" alt="Стрижки та зачіски">
 
-        <h3>Наші послуги</h3>
+        </div>
+        <div class="Poslugi">
+            <h3>Наші послуги</h3>
         <table>
             <tr>
                 <th>Послуга</th>
@@ -115,12 +49,16 @@
             </tr>
           
         </table>
+        </div>
 
+       <div class="Grafik">
         <h3>Зручний графік</h3>
         <p>Пн-Сб: 9:00 - 20:00</p>
         <p>Нд: 10:00 - 18:00</p>
+       </div>
 
-        <h3>Запишіться зараз</h3>
+        <div class="forma">
+            <h3>Запишіться зараз</h3>
         <form>
             <label for="ім'я">Ім'я:</label>
             <input type="text" id="ім'я" name="ім'я" required>
@@ -130,6 +68,7 @@
 
             <input type="submit" value="Записатися">
         </form>
+        </div>
 
         <p>Більше інформації тут - <a class="perehid" href="main.html" target="_blank">сайт</a>.</p>
     </main>
